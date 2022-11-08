@@ -7,7 +7,7 @@ interface IVault {
     // The number of all tokens in the pool
     function poolAmounts(address _token) external view returns (uint256);
    
-    function increaseCollateral(address _collateralToken, address _receiver) external returns (uint256);
+    function increaseCollateral(address _collateralToken, address _receiver) external returns (bool);
     
     function decreaseCollateral(
         address _collateralToken,
